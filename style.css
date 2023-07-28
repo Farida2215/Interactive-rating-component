@@ -15,7 +15,10 @@
 
   .container {
     width: 24rem;
-    height: fit-content;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #1C2833;
     padding: 2rem;
     color: white;
@@ -75,14 +78,19 @@
   #submit {
     margin-top: 1.5rem;
     width: 99%;
-    border: .2rem solid #FFFF;
+    border: .2rem solid #DC7633;
     border-radius: 2rem;
     height: 2.2rem;
-    color: #DC7633;
+    color: #FFFF;
     font-size: large;
     font-family: 'Segoe UI';
+    background-color:#DC7633;
   }
-
+  #submit:hover{
+    background-color: #FFFF;
+    color: #DC7633;
+    border: .2rem solid #FFFF;
+  }
   .container.submitted {
     border: 1px solid #0b1927;
   }
