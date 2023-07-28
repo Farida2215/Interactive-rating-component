@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #17202A;
+  }
+
+
+  .container {
+    width: 24rem;
+    height: fit-content;
+    background-color: #1C2833;
+    padding: 2rem;
+    color: white;
+    font-family: monospace;
+    border: 1px solid #1C2833;
+    border-radius: 7%;
+  }
+
+  .radio-label {
+    display: inline-block;
+    position: relative;
+    margin: 0px 2.3rem;
+    margin-left: 0;
+    cursor: pointer;
+  }
+
+  .radio-label input[type="radio"] {
+    display: none;
+  }
+
+  .radio-circle {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .radio-label input[type="radio"]:checked+.radio-circle {
+    border-color: #DC7633;
+    background-color: #DC7633;
+    color: #fff;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  header p {
+    padding-top: 1.2rem;
+    opacity: 60%;
+
+  }
+
+  #form {
+    margin-top: 2rem;
+    width: 100%;
+    align-self: center;
+  }
+
+  #submit {
+    margin-top: 1.5rem;
+    width: 99%;
+    border: .2rem solid #FFFF;
+    border-radius: 2rem;
+    height: 2.2rem;
+    color: #DC7633;
+    font-size: large;
+    font-family: 'Segoe UI';
+  }
+
+  .container.submitted {
+    border: 1px solid #0b1927;
+  }
+
+  .sp {
+    width: 60%;
+    margin-left: 4rem;
+    background-color: #34495E;
+    border-radius: 1rem;
+    text-align: center;
+    color: #DC7633;
+
+  }
+
+  @media (max-width:786px) {
+    .container {
+      width: 20rem;
+    }
+
+    .radio-label {
+      margin: 0px 1.5rem;
+      margin-left: 0;
+
+    }
+
+    .sp {
+      width: 80%;
+      margin-left: 1.8rem;
+      text-align: center;
+      align-self: center;
+
+    }
+
+
+  }
